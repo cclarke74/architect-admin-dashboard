@@ -1,0 +1,35 @@
+
+.title {
+    background: white;
+    color: black;
+    font-size: 14px;
+
+}
+
+.center-v {
+    width: 100%;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.form {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn {
+    background-color:rgb(221, 213, 213);
+    color: black;
+}
+
+.line {
+    width: 60% !important;
+
+}
+
+.form-control::placeholder {
+    font-size: 14px; 
+}

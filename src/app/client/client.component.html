@@ -1,0 +1,39 @@
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-sm title center-v bg-light">
+            <div>
+                <h2>Create a Client</h2><br>
+                <h6>Please fill in this form to create a client.</h6>
+            </div>
+            <hr>
+            <div class="form" style="width: 200px">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" [(ngModel)]="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" [(ngModel)]="email" placeholder="Email">
+                </div>
+                 <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" [(ngModel)]="address" placeholder="Address">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" [(ngModel)]="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="repeatPassword">Repeat Password</label>
+                    <input type="password" class="form-control" id="repeatPassword" [(ngModel)]="repeatPassword" placeholder="Repeat Password">
+                </div>
+            </div>
+            <hr>
+            <div>
+                <form>
+                    <button type="submit" class="btn btn-primary" (click)="onValidate()">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

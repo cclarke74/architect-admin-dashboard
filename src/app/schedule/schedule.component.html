@@ -1,0 +1,36 @@
+<!-- schedule.component.html -->
+
+<div class="container mb-5">
+  <div class="row container-height">
+    <div class="col-sm title center-v bg-light">
+      <div>
+        <h2 class="mt-2">Create a Meeting Schedule</h2>
+      </div>
+      <hr>
+      <div class="form">
+        <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Meeting Topic</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter Meeting Topic">
+          </div>
+          <div class="form-group">
+            <label for="numberOfPeople">Number of People</label>
+            <input type="number" class="form-control" id="numberOfPeople" formControlName="numberOfPeople"
+              placeholder="Enter number of people">
+          </div>
+          <div class="form-group">
+            <input type="datetime-local" formControlName="startTime" class="form-control">
+            <div
+              *ngIf="appointmentForm.get('startTime')?.hasError('required') && appointmentForm.get('startTime')?.touched">
+            </div>
+          </div>
+          <hr>
+          <div>
+            <button type="submit" class="btn btn-primary">Schedule Meeting</button>
+          </div>
+        </form>
+        <p class="success-msg">{{successMessage}}</p>
+      </div>
+    </div>
+  </div>
+</div>
