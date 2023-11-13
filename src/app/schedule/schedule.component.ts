@@ -25,7 +25,7 @@ export class ScheduleComponent implements OnInit {
   onSubmit() {
     if (this.appointmentForm.valid) {
       console.log(this.appointmentForm.value);
-      this.successMessage = 'You submited your request';
+      this.successMessage = 'You submitted your request!';
     } else {
       this.markFormControlsAsTouched();
     }
